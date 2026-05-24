@@ -40,22 +40,23 @@ Follow the detailed instructions at:
 
 2. Configure Repository Settings:
    - Select your repository **Settings** (the gear icon way on the right).
-   -  Go to **Pages** tab / Enable GitHub Pages / Build and deployment / set **Source** to **GitHub Actions**
-   -  Go to **Advanced Security** tab / Dependabot / **Dependabot security updates** / **Enable**
-   -  Go to **Advanced Security** tab / Dependabot / **Grouped security updates** / **Enable**
+
+   - Go to **Pages** tab / Enable GitHub Pages / Build and deployment / set **Source** to **GitHub Actions**
+
+   - Go to **Advanced Security** tab / Dependabot / **Dependabot security updates** / **Enable**
+
+   - Go to **Advanced Security** tab / Dependabot / **Grouped security updates** / **Enable**
 
 3. Clone to local: Open a **machine terminal** in your **`Repos`** folder and clone your new repo.
 
   ```shell
-  git clone https://github.com/YOURACCOUNT/datafun-04-notebooks
-  ```
+  git clone https://github.com/Airfirm/datafun-04-notebooks
 
 4. Open project in VS Code: Change directory into the repo and open the project in VS Code by running `code .` ("code dot"):
 
   ```shell
   cd datafun-04-notebooks
   code .
-  ```
 
 5. Install recommended extensions.
 
@@ -200,12 +201,14 @@ Now apply what you learned. Create a new notebook and perform EDA on a different
 Recommended Option 1: Use a Seaborn Built-in Dataset
 
 Seaborn includes several datasets. To see the list:
+
 ```python
 import seaborn as sns
 print(sns.get_dataset_names())
 ```
 
 Good choices for practice:
+
 - `iris` - flower measurements (150 rows, 5 columns)
 - `tips` - restaurant tipping data (244 rows, 7 columns)
 - `diamonds` - diamond prices and attributes (53940 rows, 10 columns)
@@ -238,7 +241,9 @@ Follow the example, and ensure you have:
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) with in a file.
 
-## Troubleshooting >>> or ...
+## Troubleshooting >>> or
+
+...
 
 If you see something like this in your terminal: `>>>` or `...`
 You accidentally started Python interactive mode.
