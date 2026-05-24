@@ -95,3 +95,33 @@ body_mass_g              0.595110      -0.471916           0.871202     1.000000
 2026-05-24 14:02:47 | INFO | EDA | EDA workflow complete
 2026-05-24 14:02:47 | INFO | EDA | IMPORTANT: This script creates chart windows.
 2026-05-24 14:02:47 | INFO | EDA | Close any chart windows and terminate this process with CTRL+c as needed.
+2026-05-24 14:45:37 | INFO | EDA | === RUN START ===
+2026-05-24 14:45:37 | INFO | EDA | project=Exploratory Data Analysis (EDA) - Penguins
+2026-05-24 14:45:37 | INFO | EDA | repo_dir=datafun-04-notebooks
+2026-05-24 14:45:37 | INFO | EDA | python=3.14.2
+2026-05-24 14:45:37 | INFO | EDA | os=Windows 11
+2026-05-24 14:45:37 | INFO | EDA | shell=powershell
+2026-05-24 14:45:37 | INFO | EDA | cwd=notebooks
+2026-05-24 14:45:37 | INFO | EDA | github_actions=False
+2026-05-24 14:45:37 | INFO | EDA | Loading penguins dataset from seaborn
+2026-05-24 14:45:37 | INFO | EDA | Data loaded: 344 rows, 7 columns
+2026-05-24 14:45:37 | INFO | EDA | Inspecting first rows of data
+2026-05-24 14:45:37 | INFO | EDA | Column names
+2026-05-24 14:45:37 | INFO | EDA | DataFrame info
+2026-05-24 14:45:37 | INFO | EDA | Dataset shape: 344 rows, 7 columns
+2026-05-24 14:45:37 | INFO | EDA | Building starter data dictionary
+2026-05-24 14:45:37 | INFO | EDA | Checking missing values per column
+2026-05-24 14:45:37 | INFO | EDA | Duplicate rows detected: 0
+2026-05-24 14:45:37 | INFO | EDA | Basic sanity check for numeric columns
+2026-05-24 14:45:37 | INFO | EDA | Creating cleaned view for EDA
+2026-05-24 14:45:37 | INFO | EDA | Cleaned view shape: 342 rows, 7 columns
+2026-05-24 14:45:37 | INFO | EDA | Computing overall descriptive statistics
+2026-05-24 14:45:37 | INFO | EDA | Computing descriptive statistics by species
+2026-05-24 14:45:37 | INFO | EDA | Computing correlation matrix for numeric columns
+2026-05-24 14:45:37 | INFO | EDA | Adding engineered fields
+2026-05-24 14:45:37 | INFO | EDA | Summarizing body size patterns by species
+2026-05-24 14:45:37 | INFO | EDA | Summarizing body size patterns by island
+2026-05-24 14:45:37 | INFO | EDA | Creating scatter plot: flipper length vs bill length
+2026-05-24 14:45:38 | INFO | EDA | Creating box plot: flipper length by species
+2026-05-24 14:45:38 | INFO | EDA | Creating bar chart: average body mass by species
+2026-05-24 14:45:38 | INFO | EDA | Creating bar chart: average body mass by island
