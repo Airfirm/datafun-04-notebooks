@@ -125,3 +125,173 @@ body_mass_g              0.595110      -0.471916           0.871202     1.000000
 2026-05-24 14:45:38 | INFO | EDA | Creating box plot: flipper length by species
 2026-05-24 14:45:38 | INFO | EDA | Creating bar chart: average body mass by species
 2026-05-24 14:45:38 | INFO | EDA | Creating bar chart: average body mass by island
+2026-05-24 14:56:38 | INFO | EDA | === RUN START ===
+2026-05-24 14:56:38 | INFO | EDA | project=Exploratory Data Analysis (EDA) - Penguins
+2026-05-24 14:56:38 | INFO | EDA | repo_dir=datafun-04-notebooks
+2026-05-24 14:56:38 | INFO | EDA | python=3.14.2
+2026-05-24 14:56:38 | INFO | EDA | os=Windows 11
+2026-05-24 14:56:38 | INFO | EDA | shell=powershell
+2026-05-24 14:56:38 | INFO | EDA | cwd=.
+2026-05-24 14:56:38 | INFO | EDA | github_actions=False
+2026-05-24 14:56:38 | INFO | EDA | Section 1: Setup
+2026-05-24 14:56:38 | INFO | EDA | Artifacts folder ready: C:\Repos\datafun-04-notebooks\artifacts
+2026-05-24 14:56:38 | INFO | EDA | Section 2: Load the data
+2026-05-24 14:56:38 | INFO | EDA | Loading penguins dataset from seaborn
+2026-05-24 14:56:38 | INFO | EDA | Data loaded: 344 rows, 7 columns
+2026-05-24 14:56:38 | INFO | EDA | Section 3: Inspect data shape and basic structure
+2026-05-24 14:56:38 | INFO | EDA | Inspecting first rows of data
+2026-05-24 14:56:38 | DEBUG | EDA |
+  species     island  bill_length_mm  bill_depth_mm  flipper_length_mm  body_mass_g     sex
+0  Adelie  Torgersen            39.1           18.7              181.0       3750.0    Male
+1  Adelie  Torgersen            39.5           17.4              186.0       3800.0  Female
+2  Adelie  Torgersen            40.3           18.0              195.0       3250.0  Female
+3  Adelie  Torgersen             NaN            NaN                NaN          NaN     NaN
+4  Adelie  Torgersen            36.7           19.3              193.0       3450.0  Female
+2026-05-24 14:56:38 | INFO | EDA | Column names
+2026-05-24 14:56:38 | DEBUG | EDA | ['species', 'island', 'bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex']
+2026-05-24 14:56:38 | INFO | EDA | DataFrame info
+2026-05-24 14:56:38 | INFO | EDA | Dataset shape: 344 rows, 7 columns
+2026-05-24 14:56:38 | INFO | EDA | Section 4: Check data quality
+2026-05-24 14:56:38 | INFO | EDA | Building starter data dictionary
+2026-05-24 14:56:38 | DEBUG | EDA |
+              column    dtype  missing_count  missing_pct
+0            species      str              0         0.00
+1             island      str              0         0.00
+2     bill_length_mm  float64              2         0.58
+3      bill_depth_mm  float64              2         0.58
+4  flipper_length_mm  float64              2         0.58
+5        body_mass_g  float64              2         0.58
+6                sex      str             11         3.20
+2026-05-24 14:56:38 | DEBUG | EDA |
+              column    dtype  missing_count  missing_pct
+0            species      str              0         0.00
+1             island      str              0         0.00
+2     bill_length_mm  float64              2         0.58
+3      bill_depth_mm  float64              2         0.58
+4  flipper_length_mm  float64              2         0.58
+5        body_mass_g  float64              2         0.58
+6                sex      str             11         3.20
+2026-05-24 14:56:38 | INFO | EDA | Checking missing values per column
+2026-05-24 14:56:38 | DEBUG | EDA |
+sex                  11
+bill_depth_mm         2
+bill_length_mm        2
+flipper_length_mm     2
+body_mass_g           2
+island                0
+species               0
+dtype: int64
+2026-05-24 14:56:38 | INFO | EDA | Duplicate rows detected: 0
+2026-05-24 14:56:38 | INFO | EDA | Basic sanity check for numeric columns
+2026-05-24 14:56:38 | DEBUG | EDA |
+       bill_length_mm  bill_depth_mm  flipper_length_mm  body_mass_g
+count      342.000000     342.000000         342.000000   342.000000
+mean        43.921930      17.151170         200.915205  4201.754386
+std          5.459584       1.974793          14.061714   801.954536
+min         32.100000      13.100000         172.000000  2700.000000
+25%         39.225000      15.600000         190.000000  3550.000000
+50%         44.450000      17.300000         197.000000  4050.000000
+75%         48.500000      18.700000         213.000000  4750.000000
+max         59.600000      21.500000         231.000000  6300.000000
+2026-05-24 14:56:38 | INFO | EDA | Section 5: Create a cleaned view for EDA
+2026-05-24 14:56:38 | INFO | EDA | Creating cleaned view for EDA
+2026-05-24 14:56:38 | INFO | EDA | Cleaned view shape: 342 rows, 7 columns
+2026-05-24 14:56:38 | INFO | EDA | Section 6: Compute descriptive statistics
+2026-05-24 14:56:38 | INFO | EDA | Computing overall descriptive statistics
+2026-05-24 14:56:38 | DEBUG | EDA |
+                   count         mean         std     min       25%      50%     75%     max
+bill_length_mm     342.0    43.921930    5.459584    32.1    39.225    44.45    48.5    59.6
+bill_depth_mm      342.0    17.151170    1.974793    13.1    15.600    17.30    18.7    21.5
+flipper_length_mm  342.0   200.915205   14.061714   172.0   190.000   197.00   213.0   231.0
+body_mass_g        342.0  4201.754386  801.954536  2700.0  3550.000  4050.00  4750.0  6300.0
+2026-05-24 14:56:38 | INFO | EDA | Computing descriptive statistics by species
+2026-05-24 14:56:38 | DEBUG | EDA |
+          bill_length_mm                                  bill_depth_mm                                   \
+                   count       mean       std   min   max         count       mean       std   min   max
+species
+Adelie               151  38.791391  2.663405  32.1  46.0           151  18.346358  1.216650  15.5  21.5
+Chinstrap             68  48.833824  3.339256  40.9  58.0            68  18.420588  1.135395  16.4  20.8
+Gentoo               123  47.504878  3.081857  40.9  59.6           123  14.982114  0.981220  13.1  17.3
+
+          flipper_length_mm                                     body_mass_g
+                      count        mean       std    min    max       count         mean         std     min     max
+species
+Adelie                  151  189.953642  6.539457  172.0  210.0         151  3700.662252  458.566126  2850.0  4775.0
+Chinstrap                68  195.823529  7.131894  178.0  212.0          68  3733.088235  384.335081  2700.0  4800.0
+Gentoo                  123  217.186992  6.484976  203.0  231.0         123  5076.016260  504.116237  3950.0  6300.0
+2026-05-24 14:56:38 | DEBUG | EDA |
+                   count         mean         std     min       25%      50%     75%     max
+bill_length_mm     342.0    43.921930    5.459584    32.1    39.225    44.45    48.5    59.6
+bill_depth_mm      342.0    17.151170    1.974793    13.1    15.600    17.30    18.7    21.5
+flipper_length_mm  342.0   200.915205   14.061714   172.0   190.000   197.00   213.0   231.0
+body_mass_g        342.0  4201.754386  801.954536  2700.0  3550.000  4050.00  4750.0  6300.0
+2026-05-24 14:56:38 | DEBUG | EDA |
+          bill_length_mm                                  bill_depth_mm                                   \
+                   count       mean       std   min   max         count       mean       std   min   max
+species
+Adelie               151  38.791391  2.663405  32.1  46.0           151  18.346358  1.216650  15.5  21.5
+Chinstrap             68  48.833824  3.339256  40.9  58.0            68  18.420588  1.135395  16.4  20.8
+Gentoo               123  47.504878  3.081857  40.9  59.6           123  14.982114  0.981220  13.1  17.3
+
+          flipper_length_mm                                     body_mass_g
+                      count        mean       std    min    max       count         mean         std     min     max
+species
+Adelie                  151  189.953642  6.539457  172.0  210.0         151  3700.662252  458.566126  2850.0  4775.0
+Chinstrap                68  195.823529  7.131894  178.0  212.0          68  3733.088235  384.335081  2700.0  4800.0
+Gentoo                  123  217.186992  6.484976  203.0  231.0         123  5076.016260  504.116237  3950.0  6300.0
+2026-05-24 14:56:38 | INFO | EDA | Section 7: Compute correlation matrix
+2026-05-24 14:56:38 | INFO | EDA | Computing correlation matrix for numeric columns
+2026-05-24 14:56:38 | DEBUG | EDA |
+                   bill_length_mm  bill_depth_mm  flipper_length_mm  body_mass_g
+bill_length_mm           1.000000      -0.235053           0.656181     0.595110
+bill_depth_mm           -0.235053       1.000000          -0.583851    -0.471916
+flipper_length_mm        0.656181      -0.583851           1.000000     0.871202
+body_mass_g              0.595110      -0.471916           0.871202     1.000000
+2026-05-24 14:56:38 | DEBUG | EDA |
+                   bill_length_mm  bill_depth_mm  flipper_length_mm  body_mass_g
+bill_length_mm           1.000000      -0.235053           0.656181     0.595110
+bill_depth_mm           -0.235053       1.000000          -0.583851    -0.471916
+flipper_length_mm        0.656181      -0.583851           1.000000     0.871202
+body_mass_g              0.595110      -0.471916           0.871202     1.000000
+2026-05-24 14:56:38 | INFO | EDA | Section 8: Phase 4 Technical Modification
+2026-05-24 14:56:38 | INFO | EDA | Adding engineered fields
+2026-05-24 14:56:38 | INFO | EDA | Engineered fields added: body_mass_kg, flipper_body_ratio, size_category
+2026-05-24 14:56:38 | DEBUG | EDA |
+  species     island  flipper_length_mm  body_mass_g  body_mass_kg  flipper_body_ratio size_category
+0  Adelie  Torgersen              181.0       3750.0          3.75              0.0483        medium
+1  Adelie  Torgersen              186.0       3800.0          3.80              0.0489        medium
+2  Adelie  Torgersen              195.0       3250.0          3.25              0.0600         small
+4  Adelie  Torgersen              193.0       3450.0          3.45              0.0559         small
+5  Adelie  Torgersen              190.0       3650.0          3.65              0.0521        medium
+2026-05-24 14:56:38 | INFO | EDA | Section 9: Phase 5 Apply Skills to a New Problem
+2026-05-24 14:56:38 | INFO | EDA | Summarizing body size patterns by species
+2026-05-24 14:56:38 | DEBUG | EDA |
+     species  penguin_count  avg_body_mass_g  avg_body_mass_kg  avg_flipper_length_mm  avg_flipper_body_ratio
+0     Adelie            151          3700.66              3.70                 189.95                    0.05
+1  Chinstrap             68          3733.09              3.73                 195.82                    0.05
+2     Gentoo            123          5076.02              5.08                 217.19                    0.04
+2026-05-24 14:56:38 | INFO | EDA | Summarizing body size patterns by island
+2026-05-24 14:56:38 | DEBUG | EDA |
+      island  penguin_count  avg_body_mass_g  avg_body_mass_kg  avg_flipper_length_mm
+0     Biscoe            167          4716.02              4.72                 209.71
+1      Dream            124          3712.90              3.71                 193.07
+2  Torgersen             51          3706.37              3.71                 191.20
+2026-05-24 14:56:38 | INFO | EDA | Analyst Insights
+2026-05-24 14:56:38 | INFO | EDA | The species with the highest average body mass is Gentoo with an average body mass of 5076.02 grams.
+2026-05-24 14:56:38 | INFO | EDA | The island with the highest average body mass is Biscoe with an average body mass of 4716.02 grams.
+2026-05-24 14:56:38 | INFO | EDA | These results suggest that species and island location are useful grouping fields for understanding penguin body size patterns.
+2026-05-24 14:56:38 | INFO | EDA | Section 10: Create and save plots
+2026-05-24 14:56:38 | INFO | EDA | Creating scatter plot: flipper length vs bill length
+2026-05-24 14:56:39 | INFO | EDA | Saved chart to: C:\Repos\datafun-04-notebooks\artifacts\flipper_vs_bill_length_by_species.png
+2026-05-24 14:56:39 | INFO | EDA | Saved chart to: C:\Repos\datafun-04-notebooks\artifacts\flipper_length_by_species.png
+2026-05-24 14:56:39 | INFO | EDA | Creating bar chart: average body mass by species
+2026-05-24 14:56:39 | INFO | EDA | Saved chart to: C:\Repos\datafun-04-notebooks\artifacts\average_body_mass_by_species.png
+2026-05-24 14:56:39 | INFO | EDA | Creating bar chart: average body mass by island
+2026-05-24 14:56:39 | INFO | EDA | Saved chart to: C:\Repos\datafun-04-notebooks\artifacts\average_body_mass_by_island.png
+2026-05-24 14:56:39 | INFO | EDA | Section 11: Save summary tables
+2026-05-24 14:56:39 | INFO | EDA | Saving summary tables
+2026-05-24 14:56:39 | INFO | EDA | Saved species summary to: C:\Repos\datafun-04-notebooks\artifacts\species_size_summary.csv
+2026-05-24 14:56:39 | INFO | EDA | Saved island summary to: C:\Repos\datafun-04-notebooks\artifacts\island_size_summary.csv
+2026-05-24 14:56:39 | INFO | EDA | EDA workflow complete
+2026-05-24 14:56:39 | INFO | EDA | Artifacts saved in: C:\Repos\datafun-04-notebooks\artifacts
+2026-05-24 14:56:39 | INFO | EDA | Charts and CSV summary files are ready for GitHub.

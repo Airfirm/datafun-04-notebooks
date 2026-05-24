@@ -1,0 +1,4 @@
+species,penguin_count,avg_body_mass_g,avg_body_mass_kg,avg_flipper_length_mm,avg_flipper_body_ratio
+Adelie,151,3700.66,3.7,189.95,0.05
+Chinstrap,68,3733.09,3.73,195.82,0.05
+Gentoo,123,5076.02,5.08,217.19,0.04
