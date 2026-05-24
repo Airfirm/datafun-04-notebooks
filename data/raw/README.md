@@ -93,24 +93,6 @@ This EDA workflow showed that the Penguins dataset contains useful patterns for 
 
 This project helped me practice important exploratory data analysis skills, including loading data, inspecting structure, checking data quality, cleaning data, calculating statistics, analyzing correlations, and creating visualizations.
 
-### Run Log Summary
-
-```text
-2026-05-24 13:28:09 | INFO | EDA | === RUN START ===
-2026-05-24 13:28:09 | INFO | EDA | project=Exploratory Data Analysis (EDA) - Penguins
-2026-05-24 13:28:09 | INFO | EDA | repo_dir=datafun-04-notebooks
-2026-05-24 13:28:09 | INFO | EDA | python=3.14.2
-2026-05-24 13:28:09 | INFO | EDA | os=Windows 11
-2026-05-24 13:28:09 | INFO | EDA | shell=powershell
-2026-05-24 13:28:09 | INFO | EDA | Data loaded: 344 rows, 7 columns
-2026-05-24 13:28:10 | INFO | EDA | Duplicate rows detected: 0
-2026-05-24 13:28:10 | INFO | EDA | Cleaned view shape: 342 rows, 7 columns
-2026-05-24 13:28:10 | INFO | EDA | Computing overall descriptive statistics
-2026-05-24 13:28:10 | INFO | EDA | Computing descriptive statistics by species
-2026-05-24 13:28:10 | INFO | EDA | Computing correlation matrix for numeric columns
-2026-05-24 13:28:10 | INFO | EDA | Creating scatter plot: flipper length vs bill length
-2026-05-24 14:02:47 | INFO | EDA | EDA workflow complete
-
 ## Project Visualizations
 
 ### Flipper Length by Species
@@ -139,3 +121,21 @@ NOTE: The CSV file is not exactly the same as the Seaborn version.
 - Seaborn version does not include `year`
 
 It is included here for visual inspection and/or opening in Excel as you like.
+
+### Run Log Summary
+
+```text
+2026-05-24 13:28:09 | INFO | EDA | === RUN START ===
+2026-05-24 13:28:09 | INFO | EDA | project=Exploratory Data Analysis (EDA) - Penguins
+2026-05-24 13:28:09 | INFO | EDA | repo_dir=datafun-04-notebooks
+2026-05-24 13:28:09 | INFO | EDA | python=3.14.2
+2026-05-24 13:28:09 | INFO | EDA | os=Windows 11
+2026-05-24 13:28:09 | INFO | EDA | shell=powershell
+2026-05-24 13:28:09 | INFO | EDA | Data loaded: 344 rows, 7 columns
+2026-05-24 13:28:10 | INFO | EDA | Duplicate rows detected: 0
+2026-05-24 13:28:10 | INFO | EDA | Cleaned view shape: 342 rows, 7 columns
+2026-05-24 13:28:10 | INFO | EDA | Computing overall descriptive statistics
+2026-05-24 13:28:10 | INFO | EDA | Computing descriptive statistics by species
+2026-05-24 13:28:10 | INFO | EDA | Computing correlation matrix for numeric columns
+2026-05-24 13:28:10 | INFO | EDA | Creating scatter plot: flipper length vs bill length
+2026-05-24 14:02:47 | INFO | EDA | EDA workflow complete
