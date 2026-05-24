@@ -111,8 +111,19 @@ This project helped me practice important exploratory data analysis skills, incl
 2026-05-24 13:28:10 | INFO | EDA | Creating scatter plot: flipper length vs bill length
 2026-05-24 14:02:47 | INFO | EDA | EDA workflow complete
 
-![Flipper length vs Bill length (by species)](image.png)
-![Flipper length by species](image-1.png)
+## Project Visualizations
+
+### Flipper Length by Species
+
+This box plot compares flipper length across the Adelie, Chinstrap, and Gentoo penguin species.
+
+![Flipper Length by Species](artifacts/flipper_length_by_species.png)
+
+### Flipper Length vs Bill Length by Species
+
+This scatter plot shows the relationship between flipper length and bill length, grouped by penguin species.
+
+![Flipper Length vs Bill Length](artifacts/flipper_length_vs_bill_length_by_species.png)
 
 ## Penguins CSV
 
